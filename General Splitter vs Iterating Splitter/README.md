@@ -44,28 +44,21 @@ to XML Converter**.
 
 You choose the splitter through an HTTP request header:
 
+
   -----------------------------------------------------------------------
   Header                Value                 Behavior
   --------------------- --------------------- ---------------------------
-  `splittertype`        `gen`             Routes message to General
+  `splitterType`        `gen`             Routes message to General
                                               Splitter branch
 
-  `splittertype`        `itr`           Routes message to Iterating
+    `splitterType`        `itr`             Routes message to Iterating
                                               Splitter branch
   -----------------------------------------------------------------------
 
 
-### **4️⃣ General Splitter Branch**
+### **4️⃣ General Splitter Branch** vs **5️⃣ Iterating Splitter Branch**
 
--   Splits XML elements\
--   Processes all fragments\
--   create split fragments as attachment \
-
-### **5️⃣ Iterating Splitter Branch**
-
--   Processes each fragment **one-by-one**\
--   Each fragment becomes an independent message\
--   Uses **Groovy script to log all outputs**
+the General Splitter preserves the original message's enveloping (root) elements in each split message, while the Iterating Splitter only includes the content of the split entity itself, without the parent structure. 
 
 ------------------------------------------------------------------------
 
