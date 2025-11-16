@@ -48,12 +48,11 @@ You choose the splitter through an HTTP request header:
   -----------------------------------------------------------------------
   Header                Value                 Behavior
   --------------------- --------------------- ---------------------------
-  `splitterType`        `gen`             Routes message to General
+  `splitterType`  -->      `gen`    -->         Routes message to General
                                               Splitter branch
 
-    `splitterType`        `itr`             Routes message to Iterating
+    `splitterType`    -->    `itr`    -->       Routes message to Iterating
                                               Splitter branch
-  -----------------------------------------------------------------------
 
 
 ### **4️⃣ General Splitter Branch** vs **5️⃣ Iterating Splitter Branch**
