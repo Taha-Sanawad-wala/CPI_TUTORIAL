@@ -50,6 +50,7 @@ You choose the splitter through an HTTP request header:
   --------------------- --------------------- ---------------------------
 `splitterType`  -->      `gen`    -->         Routes message to General
                                               Splitter branch
+
 `splitterType`    -->    `itr`    -->       Routes message to Iterating
                                               Splitter branch
 
