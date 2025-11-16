@@ -7,7 +7,7 @@ integration suite examples
 This repository contains multiple ready-to-use integration flows, Groovy scripts, payload samples, and scenario-based demos designed to help learners and consultants practice CPI hands-on.
 Each example is packaged as an iFlow ZIP so you can easily download, import, configure, and deploy it in your own CPI tenant.
 
-🚀 Getting Started
+### 🚀 Getting Started
 Follow these simple steps to use any iFlow from this repository.
 
 📥 1. Download the iFlow Package
@@ -45,27 +45,25 @@ Timer (scheduled flows)
 SFTP/OData/Other adapters (based on scenario)
 Sample JSON/XML payloads are included in each example folder.
 
-📂 Repository Structure
+### 📂 Repository Structure
 
 /Example1-SplitterComparison
 
 |-- SplitterComparison.zip
   
 |-- sample-input.json
+
+|-- UtilityScript2.groovy
  
 /Example2-HTTPDemo
 
 |-- HTTPDemo.zip
   
 |-- sample-payload.json
- 
-/Example3-GroovyScripts
 
 |-- UtilityScript1.groovy
     
-|-- UtilityScript2.groovy
-    
-🎯 Purpose of This Repository
+### 🎯 Purpose of This Repository
 
 Help beginners understand CPI with practical, real-world examples
 
@@ -75,5 +73,5 @@ Share reusable Groovy functions, adapter configurations, and patterns
 
 Demonstrate common scenarios: splitters, routing, exception handling, and more
 
-⭐ Support
+### ⭐ Support
 If you find this repo helpful, consider starring ⭐ it on GitHub to help others discover it.
