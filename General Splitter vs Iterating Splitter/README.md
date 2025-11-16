@@ -15,21 +15,20 @@ learning, demonstrations, and interviews.
 
 ## 📁 **Repository Structure**
 
-    / (root)
-    │-- iflow/
-    │     └── General_vs_Iterating_Splitter.zip
+    / (General Splitter vs Iterating Splitter)
+    │--General_vs_Iterating_Splitter.zip
     │
-    │-- scripts/
-    │     └── Logging.groovy
+    │-- Logging.groovy
     │
-    │-- samples/
-    │     └── sample.json
+    │-- input.json
     │
     └── README.md
 
 ------------------------------------------------------------------------
 
 ## 🚀 **What This iFlow Demonstrates**
+<img width="1538" height="782" alt="image" src="https://github.com/user-attachments/assets/71c90939-9f93-4788-be1c-b57c142584f1" />
+
 
 ### **1️⃣ HTTP-Based Input**
 
@@ -48,18 +47,19 @@ You choose the splitter through an HTTP request header:
   -----------------------------------------------------------------------
   Header                Value                 Behavior
   --------------------- --------------------- ---------------------------
-  `splitterType`        `gen`             Routes message to General
+  `splittertype`        `gen`             Routes message to General
                                               Splitter branch
 
-  `splitterType`        `itr`           Routes message to Iterating
+  `splittertype`        `itr`           Routes message to Iterating
                                               Splitter branch
   -----------------------------------------------------------------------
+
 
 ### **4️⃣ General Splitter Branch**
 
 -   Splits XML elements\
 -   Processes all fragments\
--   create splitted fragements as attachement\
+-   create split fragments as attachment \
 
 ### **5️⃣ Iterating Splitter Branch**
 
@@ -74,7 +74,7 @@ You choose the splitter through an HTTP request header:
 
 ### **URL**
 
-    POST https://<your-cpi-tenant>/http/splitterDem
+    POST https://<your-cpi-tenant>/http/itr_vs_gen
 
 ### **Headers**
 
