@@ -48,23 +48,31 @@ Sample JSON/XML payloads are included in each example folder.
 📂 Repository Structure
 
 /Example1-SplitterComparison
+
   |-- SplitterComparison.zip
+  
   |-- sample-input.json
  
 /Example2-HTTPDemo
+
   |-- HTTPDemo.zip
+  
   |-- sample-payload.json
  
 /Example3-GroovyScripts
+
     |-- UtilityScript1.groovy
+    
     |-- UtilityScript2.groovy
     
 🎯 Purpose of This Repository
 Help beginners understand CPI with practical, real-world examples
+
 Provide ready-to-run iFlows for quick testing and PoCs
+
 Share reusable Groovy functions, adapter configurations, and patterns
+
 Demonstrate common scenarios: splitters, routing, exception handling, and more
 
 ⭐ Support
 If you find this repo helpful, consider starring ⭐ it on GitHub to help others discover it.
-If you'd like, I can also generate a more stylish version, or a separate README template for each example folder.
