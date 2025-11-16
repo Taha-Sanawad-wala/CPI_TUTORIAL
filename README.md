@@ -2,12 +2,14 @@
 integration suite examples
 
 ## 📘 SAP CPI – Hands-On Examples & Tutorials
-Welcome to the SAP Cloud Platform Integration (CPI) examples repository!
+**Welcome to the SAP Cloud Platform Integration (CPI) examples repository!**
+
 This repository contains multiple ready-to-use integration flows, Groovy scripts, payload samples, and scenario-based demos designed to help learners and consultants practice CPI hands-on.
 Each example is packaged as an iFlow ZIP so you can easily download, import, configure, and deploy it in your own CPI tenant.
 
 🚀 Getting Started
 Follow these simple steps to use any iFlow from this repository.
+
 📥 1. Download the iFlow Package
 Navigate to the folder containing the desired example.
 Locate the .zip file.
@@ -44,6 +46,7 @@ SFTP/OData/Other adapters (based on scenario)
 Sample JSON/XML payloads are included in each example folder.
 
 📂 Repository Structure
+
 /Example1-SplitterComparison
   |-- SplitterComparison.zip
   |-- sample-input.json
