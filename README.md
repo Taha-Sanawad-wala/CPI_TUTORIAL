@@ -49,23 +49,24 @@ Sample JSON/XML payloads are included in each example folder.
 
 /Example1-SplitterComparison
 
-  |-- SplitterComparison.zip
+|-- SplitterComparison.zip
   
-  |-- sample-input.json
+|-- sample-input.json
  
 /Example2-HTTPDemo
 
-  |-- HTTPDemo.zip
+|-- HTTPDemo.zip
   
-  |-- sample-payload.json
+|-- sample-payload.json
  
 /Example3-GroovyScripts
 
-    |-- UtilityScript1.groovy
+|-- UtilityScript1.groovy
     
-    |-- UtilityScript2.groovy
+|-- UtilityScript2.groovy
     
 🎯 Purpose of This Repository
+
 Help beginners understand CPI with practical, real-world examples
 
 Provide ready-to-run iFlows for quick testing and PoCs
