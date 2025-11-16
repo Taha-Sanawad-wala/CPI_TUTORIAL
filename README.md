@@ -45,6 +45,7 @@ Timer (scheduled flows)
 SFTP/OData/Other adapters (based on scenario)
 Sample JSON/XML payloads are included in each example folder.
 
+
 ### 📂 Repository Structure
 
 /Example1-SplitterComparison
@@ -62,6 +63,7 @@ Sample JSON/XML payloads are included in each example folder.
 |-- sample-payload.json
 
 |-- UtilityScript1.groovy
+
     
 ### 🎯 Purpose of This Repository
 
@@ -72,6 +74,7 @@ Provide ready-to-run iFlows for quick testing and PoCs
 Share reusable Groovy functions, adapter configurations, and patterns
 
 Demonstrate common scenarios: splitters, routing, exception handling, and more
+
 
 ### ⭐ Support
 If you find this repo helpful, consider starring ⭐ it on GitHub to help others discover it.
