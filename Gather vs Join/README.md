@@ -1,6 +1,6 @@
 # **README -- Gather vs Join (SAP CPI)**
 
-## 📌 **Overview**
+## 📌 **Intro**
 This repository showcases an SAP CPI Integration Flow (iFlow) that demonstrates the difference between Gather and Join steps. It provides a hands‑on example of how payloads behave when processed through different routing and aggregation strategies.
 
 ## 🚀 **Overview**
