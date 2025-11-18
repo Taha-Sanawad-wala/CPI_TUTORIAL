@@ -10,7 +10,7 @@ The iFlow starts with an HTTPS Adapter request and flows through multiple steps 
 
 📝 Content Modifier – Declares a number range in the exchange property for later use.
 
-🔄 JSON → XML Converter – Converts incoming JSON (GSYNC format) into XML.
+🔄 JSON → XML Converter – Converts incoming JSON into XML.
 
 🛣️ Router – Routes messages based on header conditions into three different paths:
 
@@ -19,6 +19,8 @@ Route 1: Splitter Path
 Route 2: Join Path
 
 Route 3: Gather Path
+
+------------------------------------------------------------------------
 
 ## 🛠️ **Flow Details**
 🔹 Route 1: Splitter Path
@@ -60,14 +62,21 @@ Gather → aggregates all split data
 
 Groovy Script → attaches payload
 
+------------------------------------------------------------------------
+
 ## 📊 **Difference Between Gather vs Join**
 Feature	Gather	Join
 Purpose	Aggregates multiple messages into one	Synchronizes multiple branches in parallel multicast
 Usage	After Splitter or multiple messages	After Parallel Multicast
 Result	Single aggregated payload	Single payload (includes hardcoded entry if modifier used)
 Without Gather	Multiple attachments (one per record)	Not applicable
+
+------------------------------------------------------------------------
+
 ## 🖼️ **iFlow Image**
 <img width="1833" height="691" alt="image" src="https://github.com/user-attachments/assets/e4f38017-d123-40a7-a2ae-779e467b506f" />
+
+------------------------------------------------------------------------
 
 ## 📚 **Key Learnings**
 Gather is best used when you need to aggregate split messages into one.
@@ -75,6 +84,8 @@ Gather is best used when you need to aggregate split messages into one.
 Join is used when you have parallel branches and want to synchronize them.
 
 Using Groovy scripts to attach payloads makes the difference between Gather and Join visible and testable.
+
+------------------------------------------------------------------------
 
 ## 🧑‍💻 **How to Use**
 Import the iFlow into your SAP CPI tenant.
@@ -85,8 +96,12 @@ Experiment with different type values (splitter, join, gather) in the header.
 
 Observe payload attachments to understand the behavior.
 
+------------------------------------------------------------------------
+
 ## 🎯 **Conclusion**
 This repo provides a clear, practical demonstration of how Gather and Join differ in SAP CPI. By experimenting with the provided iFlow, you’ll gain a deeper understanding of message aggregation and synchronisation patterns.
+
+------------------------------------------------------------------------
 
 ## 👤 **Author**
 
