@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "branch": "CS",
+        "mobileNo": "0123456789"
+    },
+    {
+        "id": "2",
+        "branch": "ME",
+        "mobileNo": "0123456789"
+    },
+    {
+        "id": "3",
+        "branch": "CS",
+        "mobileNo": "0123456789"
+    },
+    {
+        "id": "4",
+        "branch": "CS",
+        "mobileNo": "0123456789"
+    },
+    {
+        "id": "5",
+        "branch": "ME",
+        "mobileNo": "0123456789"
+    },
+    {
+        "id": "6",
+        "branch": "CS",
+        "mobileNo": "0123456789"
+    }
+]
