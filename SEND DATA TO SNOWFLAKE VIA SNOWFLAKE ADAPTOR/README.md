@@ -24,6 +24,27 @@ Open the SQL Worksheet and run:
 CREATE DATABASE DB_TEST_CPI;
 ```
 
-<img width="602" height="289" alt="image" src="https://github.com/user-attachments/assets/380bc362-db6a-4ea9-9b65-a61a1333d6d9" />
-
+<img width="940" height="452" alt="image" src="https://github.com/user-attachments/assets/d7f50a42-78cc-4311-8f3d-c3a7c6240135" />
 👉 From the dropdown, select the newly created database DB_TEST_CPI.
+
+---
+
+## 📋 Step 3: Create Table
+Run the following query to create the Customers_Northwind table:
+```CREATE OR REPLACE TABLE Customers_Northwind (
+    CustomerID   VARCHAR(10)   NOT NULL,
+    CompanyName  VARCHAR(100),
+    ContactName  VARCHAR(100),
+    ContactTitle VARCHAR(100),
+    Address      VARCHAR(200),
+    City         VARCHAR(100),
+    Region       VARCHAR(100),
+    PostalCode   VARCHAR(20),
+    Country      VARCHAR(100),
+    Phone        VARCHAR(50),
+    Fax          VARCHAR(50)
+);
+```
+
+<img width="940" height="452" alt="image" src="https://github.com/user-attachments/assets/1861d10c-6f8c-4519-a1af-1425f5c24106" />
+
