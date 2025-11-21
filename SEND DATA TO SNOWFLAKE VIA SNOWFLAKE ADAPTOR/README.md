@@ -22,7 +22,8 @@ This guide walks you through creating a Snowflake trial account, setting up a da
 Open the SQL Worksheet and run:
 ```sql
 CREATE DATABASE DB_TEST_CPI;
+```
 
+<img width="602" height="289" alt="image" src="https://github.com/user-attachments/assets/380bc362-db6a-4ea9-9b65-a61a1333d6d9" />
 
-<img width="940" height="452" alt="image" src="https://github.com/user-attachments/assets/144e8cc2-dd32-4090-b571-905f4fab4842" />
 👉 From the dropdown, select the newly created database DB_TEST_CPI.
