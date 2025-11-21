@@ -86,5 +86,27 @@ address   = jdbc:snowflake://<account>.snowflakecomputing.com
 <img width="940" height="445" alt="image" src="https://github.com/user-attachments/assets/635222d8-3609-4e6b-85a7-ce0609164d71" />
 3. In the Processing Tab, set:
 ```Operation = Insert
-Table = Customers_Northwind```
+Table = Customers_Northwind
+```
 <img width="940" height="428" alt="image" src="https://github.com/user-attachments/assets/e4758c34-b204-4b54-bef3-0a8df858e275" />
+
+---
+
+## 🚀 Step 8: Deploy I-Flow
+-->Deploy the I-Flow.
+-->Since we are using a timer, it will start immediately after deployment.
+Steps performed:
+1. Fetch customer data from Northwind OData API.
+2. Use a Groovy script to transform data into Snowflake-compatible format.
+3. Use another Groovy script to log the data being sent.
+4. Send the data to Snowflake via the Snowflake adaptor.
+<img width="940" height="528" alt="image" src="https://github.com/user-attachments/assets/e8cda9ee-e8e0-4e75-9e42-3907e61b3ac5" />
+5. Data Sent to Snowflake → Transformed customer records from Northwind API
+<img width="940" height="485" alt="image" src="https://github.com/user-attachments/assets/1e061b22-a3d3-4429-8fca-55b5b08460e8" />
+6. Data Inserted in Snowflake → Stored in Customers_Northwind table
+<img width="940" height="444" alt="image" src="https://github.com/user-attachments/assets/d5f2b82c-4ef4-4be4-af02-5100e2883b65" />
+
+---
+
+## ✅ Outcome
+You now have a working integration where Northwind customer data flows into Snowflake automatically via CPI.
