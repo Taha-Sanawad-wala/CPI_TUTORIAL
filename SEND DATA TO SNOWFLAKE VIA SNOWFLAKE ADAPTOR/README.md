@@ -48,3 +48,43 @@ Run the following query to create the Customers_Northwind table:
 
 <img width="940" height="452" alt="image" src="https://github.com/user-attachments/assets/1861d10c-6f8c-4519-a1af-1425f5c24106" />
 
+---
+
+## 🔌 Step 4: Connect a Tool to Snowflake
+Click on the bottom-left icon in Snowflake and select Connect a tool to Snowflake.
+<img width="940" height="450" alt="image" src="https://github.com/user-attachments/assets/d9af3c16-6e1c-416a-95ac-72872f6ef4a8" />
+
+---
+
+## ⚙️ Step 5: Configure Snowflake Adaptor in CPI
+Use the following configuration details:
+```account   = <account>
+user      = <your snowflake account username>
+password  = <your snowflake account password>
+warehouse = "COMPUTE_WH"
+database  = "DB_TEST_CPI"
+schema    = "PUBLIC"
+address   = jdbc:snowflake://<account>.snowflakecomputing.com
+```
+
+<img width="940" height="451" alt="image" src="https://github.com/user-attachments/assets/0662dc6c-03cb-48cc-8e04-17eac5493905" />
+
+---
+
+## 🔐 Step 6: Create Security Material in CPI
+1. Go to Monitor tab → Security Material.
+<img width="940" height="287" alt="image" src="https://github.com/user-attachments/assets/6bbc5552-9c4c-4cf0-8f29-ec0f29dde8a0" />
+2. Create User Credentials with your Snowflake username and password.
+3. Click Deploy.
+<img width="940" height="363" alt="image" src="https://github.com/user-attachments/assets/9d83e308-5bed-4fe9-b270-0890953f4e7f" />
+
+---
+
+🛠️ Step 7: Configure I-Flow
+1. Go to the deployed I-Flow.
+2. Enter the Snowflake credentials created earlier.
+<img width="940" height="445" alt="image" src="https://github.com/user-attachments/assets/635222d8-3609-4e6b-85a7-ce0609164d71" />
+3. In the Processing Tab, set:
+```Operation = Insert
+Table = Customers_Northwind```
+<img width="940" height="428" alt="image" src="https://github.com/user-attachments/assets/e4758c34-b204-4b54-bef3-0a8df858e275" />
