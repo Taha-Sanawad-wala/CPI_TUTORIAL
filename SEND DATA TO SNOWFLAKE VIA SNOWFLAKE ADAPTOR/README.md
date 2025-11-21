@@ -23,5 +23,6 @@ Open the SQL Worksheet and run:
 ```sql
 CREATE DATABASE DB_TEST_CPI;
 
-<img width="940" height="452" alt="image" src="https://github.com/user-attachments/assets/8aab6750-9a12-43f4-839b-e9720b818e4d" />
+
+<img width="940" height="452" alt="image" src="https://github.com/user-attachments/assets/144e8cc2-dd32-4090-b571-905f4fab4842" />
 👉 From the dropdown, select the newly created database DB_TEST_CPI.
