@@ -1,107 +1,26 @@
-# **README -- General Splitter vs Iterating Splitter (SAP CPI)**
+# ❄️ SEND DATA TO SNOWFLAKE VIA SNOWFLAKE ADAPTOR
 
-## 📌 **Overview**
+This guide walks you through creating a Snowflake trial account, setting up a database and table, configuring the Snowflake adaptor in SAP CPI, and sending customer data from the Northwind OData API into Snowflake.
 
-This repository contains an SAP Cloud Platform Integration (CPI) iFlow
-designed to compare the behavior of **General Splitter** and **Iterating
-Splitter**.\
-The iFlow demonstrates how CPI processes split messages differently
-under each splitter mechanism and how Groovy can be used to log that output as attachments.
+---
 
-The goal is to provide a clear, hands-on example that can be used for
-learning, demonstrations, and interviews.
+## 📝 Prerequisites
+- A **Snowflake Trial Account**
+- Access to **SAP CPI (Cloud Platform Integration)**
+- Northwind OData API endpoint
 
-------------------------------------------------------------------------
+---
 
-## 📁 **Repository Structure**
+## 🔑 Step 1: Create Snowflake Trial Account
+1. Sign up for a **Snowflake Trial**.
+2. Log in and click on the **➕ icon** → select **SQL Worksheet**.
+<img width="940" height="379" alt="image" src="https://github.com/user-attachments/assets/61e8c248-2ffb-4ede-9c5e-179b2d08002a" />
 
-    / (root)
-    │-- iflow/
-    │     └── General_vs_Iterating_Splitter.zip
-    │
-    │-- scripts/
-    │     └── Logging.groovy
-    │
-    │-- samples/
-    │     └── sample.json
-    │
-    └── README.md
+---
 
-------------------------------------------------------------------------
-
-## 🚀 **What This iFlow Demonstrates**
-
-### **1️⃣ HTTP-Based Input**
-
-The flow begins with an **HTTP Sender adapter**, allowing you to POST
-any JSON/XML payload.
-
-### **2️⃣ JSON → XML Conversion**
-
-If JSON is sent, CPI automatically converts it to XML using the **JSON
-to XML Converter**.
-
-### **3️⃣ Dynamic Routing Based on Header**
-
-You choose the splitter through an HTTP request header:
-
-  -----------------------------------------------------------------------
-  Header                Value                 Behavior
-  --------------------- --------------------- ---------------------------
-  `splitterType`        `gen`             Routes message to General
-                                              Splitter branch
-
-  `splitterType`        `itr`           Routes message to Iterating
-                                              Splitter branch
-  -----------------------------------------------------------------------
-
-### **4️⃣ General Splitter Branch**
-
--   Splits XML elements\
--   Processes all fragments\
--   create splitted fragements as attachement\
-
-### **5️⃣ Iterating Splitter Branch**
-
--   Processes each fragment **one-by-one**\
--   Each fragment becomes an independent message\
--   Uses **Groovy script to log all outputs**
-
-------------------------------------------------------------------------
-
-
-## 🧪 **How to Test Using Postman**
-
-### **URL**
-
-    POST https://<your-cpi-tenant>/http/splitterDem
-
-### **Headers**
-
-    Content-Type: application/json
-    splitterType: gen /itr
-
-------------------------------------------------------------------------
-
-## 📄 **High-Level Flow**
-
-    HTTP Sender
-         ↓
-    JSON → XML Converter
-         ↓
-         Router (splitterType)
-           ├── general → General Splitter → Groovy → End
-           └── iterating → Iterating Splitter → Groovy → End
-
-------------------------------------------------------------------------
-
-## 👤 **Author**
-
-**Taha Sanawad**\
-SAP Integration Consultant
-
-------------------------------------------------------------------------
-
-## 📜 **License**
-
-Open-source for educational use.
+## 🗄️ Step 2: Create Database
+Open the SQL Worksheet and run:
+```sql
+CREATE DATABASE DB_TEST_CPI;
+<img width="940" height="452" alt="image" src="https://github.com/user-attachments/assets/8aab6750-9a12-43f4-839b-e9720b818e4d" />
+👉 From the dropdown, select the newly created database DB_TEST_CPI.
