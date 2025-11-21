@@ -93,8 +93,8 @@ Table = Customers_Northwind
 ---
 
 ## 🚀 Step 8: Deploy I-Flow
--->Deploy the I-Flow.
--->Since we are using a timer, it will start immediately after deployment.
+a. Deploy the I-Flow.
+b. Since we are using a timer, it will start immediately after deployment.
 Steps performed:
 1. Fetch customer data from Northwind OData API.
 2. Use a Groovy script to transform data into Snowflake-compatible format.
