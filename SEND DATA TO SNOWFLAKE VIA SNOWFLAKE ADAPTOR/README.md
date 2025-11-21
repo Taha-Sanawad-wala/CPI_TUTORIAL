@@ -94,6 +94,7 @@ Table = Customers_Northwind
 
 ## 🚀 Step 8: Deploy I-Flow
 a. Deploy the I-Flow.
+
 b. Since we are using a timer, it will start immediately after deployment.
 Steps performed:
 1. Fetch customer data from Northwind OData API.
