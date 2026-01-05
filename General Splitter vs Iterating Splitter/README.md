@@ -59,6 +59,24 @@ You choose the splitter through an HTTP request header:
 
 the General Splitter preserves the original message's enveloping (root) elements in each split message, while the Iterating Splitter only includes the content of the split entity itself, without the parent structure. 
 
+Example Input:
+xml
+<Products>
+  <Product><Id>1</Id><Name>Biscuit</Name></Product>
+  <Product><Id>2</Id><Name>Tea</Name></Product>
+</Products>
+
+Example Output (per split message General Splitter) :
+xml
+<Products>
+  <Product><Id>1</Id><Name>Biscuit</Name></Product>
+</Products>
+
+Example Output (per split message Iterating Splitter):
+xml
+<Product><Id>1</Id><Name>Biscuit</Name></Product>
+
+
 ------------------------------------------------------------------------
 
 
