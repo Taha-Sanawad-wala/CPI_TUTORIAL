@@ -223,3 +223,13 @@ Two OData services are used to simulate real-world scenarios:
 - Using **OData services** provides a practical way to demonstrate enrichment scenarios.
 
 ---
+## 👤 **Author**
+
+**Taha Sanawad**\
+SAP Integration Consultant
+
+------------------------------------------------------------------------
+
+## 📜 **License**
+
+Open-source for educational use.
