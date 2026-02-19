@@ -5,7 +5,7 @@ This tutorial demonstrates how to design and implement different integration pat
 The focus is on:
 - **Request Reply**  
 - **Content Enricher (Combine method)**  
-- **Content Enricher (Enrich/Aggregation method)**  
+- **Content Enricher (Enrich method)**  
 
 By the end, you’ll understand how routing, enrichment, and request-reply behave in CPI, and why enrichment is critical to avoid data loss.
 
@@ -152,7 +152,7 @@ Two OData services are used to simulate real-world scenarios:
 
 ### 2. Create Router
 - Insert a **Router** step after the receiver.  
-- Define routing conditions based on a **header property** (e.g., `RouteType`).  
+- Define routing conditions based on a **header property** (e.g., `reqtype`).  
 - Example conditions:  
   - `reqtype = Default` → Content Enricher (Combine)  
   - `reqtype = "enrich"` → Content Enricher (Aggregation)  
@@ -174,7 +174,7 @@ Two OData services are used to simulate real-world scenarios:
 
 ### 4. Local Integration Process – Content Enricher (Enrich)
 - Add a **Content Enricher** step.  
-- Configure the **Enrich (Aggregation) method**.  
+- Configure the **Enrich method**.  
 - Call the Customer Service.  
 - Embed customer details into the existing order payload.
 
@@ -185,7 +185,7 @@ Two OData services are used to simulate real-world scenarios:
 
 ### 5. Local Integration Process – Request Reply
 - Add a **Request Reply** step.  
-- Call the Customer Service directly.  
+- Call the Customer Service directly using request reply just after Order Service.  
 - Observe how the original order payload is replaced by the customer response.  
 ---
 
