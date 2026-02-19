@@ -38,10 +38,10 @@ The CPI flow is structured as follows:
 ## 🗂 OData Services Used
 Two OData services are used to simulate real-world scenarios:
 
-| OData Service | Purpose | Example Data |
+| OData Service | Purpose | ODATA URL|
 |---------------|---------|--------------|
-| **Orders Service** | Retrieves order details | Order ID, Product, Quantity |
-| **Customer Service** | Retrieves customer details | Customer ID, Name, Address |
+| **Orders Service** | Retrieves order details | https://services.odata.org/V2/Northwind/Northwind.svc/Orders |
+| **Customer Service** | Retrieves customer details | https://services.odata.org/V2/Northwind/Northwind.svc/Customers |
 
 ---
 
