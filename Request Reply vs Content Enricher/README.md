@@ -165,28 +165,36 @@ Two OData services are used to simulate real-world scenarios:
 - Call both OData services:  
   - Orders Service → fetch order details.  
   - Customer Service → fetch customer details.  
-- Combine the payloads into one unified message.  
+- Combine the payloads into one unified message.
+
+<img width="916" height="238" alt="image" src="https://github.com/user-attachments/assets/351ec64f-745b-47f9-8d70-0b327013d0cc" />
+
+ 
 ---
 
-### 4. Local Integration Process – Content Enricher (Aggregation)
+### 4. Local Integration Process – Content Enricher (Enrich)
 - Add a **Content Enricher** step.  
 - Configure the **Enrich (Aggregation) method**.  
 - Call the Customer Service.  
-- Embed customer details into the existing order payload.  
+- Embed customer details into the existing order payload.
+
+<img width="902" height="231" alt="image" src="https://github.com/user-attachments/assets/fe9c0f75-9dfd-48c4-8079-20bf7950d843" />
+
+
 ---
 
 ### 5. Local Integration Process – Request Reply
 - Add a **Request Reply** step.  
 - Call the Customer Service directly.  
 - Observe how the original order payload is replaced by the customer response.  
-
 ---
 
 ### 6. Testing
 - Send requests with different header values (blank,'reqrply','enrich').  
 - Compare the output payloads to see how enrichment preserves or merges data, while request-reply alone overwrites it.  
 
-📸 *Insert Screenshot: Example test payloads and responses*
+<img width="1393" height="597" alt="image" src="https://github.com/user-attachments/assets/5a2f76bd-e561-4d49-9e8c-1b98fc475a70" />
+
 
 ---
 
